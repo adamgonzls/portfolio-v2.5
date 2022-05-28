@@ -1,0 +1,6 @@
+.navigationItems {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  padding-left: 0;
+}
