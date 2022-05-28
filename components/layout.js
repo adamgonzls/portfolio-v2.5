@@ -1,12 +1,12 @@
 import Head from 'next/head';
 import Navbar from './Navbar';
-import Image from 'next/image';
+import Intro from './Intro'
 import styles from './layout.module.css';
 import utilStyles from '../styles/utils.module.css';
 import Link from 'next/link';
 
 const name = 'Adam';
-export const siteTitle = 'Next.js Sample Website';
+export const siteTitle = 'Adam Frontend Dev';
 
 export default function Layout({ children, home }) {
   return (
@@ -29,19 +29,7 @@ export default function Layout({ children, home }) {
       <header className={styles.header}>
         <Navbar />
         {home ? (
-          <>
-            <h1>Hi, I am <br />Adam</h1>
-            <h2>Frontend Dev</h2>
-            <Image
-              priority
-              src="/images/2022-04-adam-bike-glasses-400x534.jpeg"
-              className={utilStyles.borderCircle}
-              height={144}
-              width={144}
-              alt={name}
-            />
-            <h1 className={utilStyles.heading2Xl}>{name}</h1>
-          </>
+          <Intro />
         ) : (
           <>
             <h2 className={utilStyles.headingLg}>
