@@ -1,12 +1,12 @@
-import Head from 'next/head';
-import Navbar from './Navbar';
-import Intro from './Intro'
-import styles from './layout.module.css';
-import utilStyles from '../styles/utils.module.css';
-import Link from 'next/link';
+import Head from 'next/head'
+import Navbar from './Navbar'
 
-const name = 'Adam';
-export const siteTitle = 'Adam Frontend Dev';
+import styles from './layout.module.css'
+import utilStyles from '../styles/utils.module.css'
+import Link from 'next/link'
+
+const name = 'Adam'
+export const siteTitle = 'Adam Frontend Dev'
 
 export default function Layout({ children, home }) {
   return (
@@ -20,7 +20,7 @@ export default function Layout({ children, home }) {
         <meta
           property="og:image"
           content={`https://og-image.vercel.app/${encodeURI(
-            siteTitle,
+            siteTitle
           )}.png?theme=light&md=0&fontSize=75px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg`}
         />
         <meta name="og:title" content={siteTitle} />
@@ -29,12 +29,14 @@ export default function Layout({ children, home }) {
       <header className={styles.header}>
         <Navbar />
         {home ? (
-          <Intro />
+          <span>layout js span</span>
         ) : (
           <>
             <h2 className={utilStyles.headingLg}>
               <Link href="/">
-                <a className={utilStyles.colorInherit}>This is a link: {name}</a>
+                <a className={utilStyles.colorInherit}>
+                  This is a link: {name}
+                </a>
               </Link>
             </h2>
           </>
@@ -49,5 +51,5 @@ export default function Layout({ children, home }) {
         </div>
       )}
     </div>
-  );
+  )
 }

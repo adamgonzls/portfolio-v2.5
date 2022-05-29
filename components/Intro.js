@@ -1,12 +1,12 @@
-import Image from 'next/image';
-import styles from './intro.module.css'
-import utilStyles from '../styles/utils.module.css';
+import Image from 'next/image'
+import styles from './Intro.module.css'
+import utilStyles from '../styles/utils.module.css'
 
 export default function Intro() {
-  const name = 'Adam';
+  const name = 'Adam'
 
   return (
-    <div className={styles.introContainer}>
+    <section className={styles.introContainer}>
       <div>
         <Image
           priority
@@ -18,10 +18,12 @@ export default function Intro() {
         />
       </div>
       <div className="introCopy">
-        <h1>Hi, I am <br />Adam</h1>
+        <h1>
+          Hi, I am <br />
+          Adam
+        </h1>
         <h2>Frontend Dev</h2>
-        <h1 className={utilStyles.heading2Xl}>{name}</h1>
       </div>
-    </div>
+    </section>
   )
 }
