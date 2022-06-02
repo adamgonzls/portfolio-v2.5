@@ -1,7 +1,38 @@
 .container {
-  max-width: 36rem;
-  padding: 0 1rem;
   margin: 3rem auto 6rem;
+  border: 2px solid orange;
+  padding: 0 1rem;
+  max-width: 36rem;
+}
+
+.sectionDetailRow {
+  border: 2px solid slateblue;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sectionDetailBlock {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  flex: 1;
+}
+
+.sectionDetailHeader {
+  margin-bottom: .8125rem;
+  font-size: 1.5rem;
+  line-height: .8125;
+}
+
+.sectionDetailCopy {
+  font-size: 1.125rem;
+}
+
+.baseButton {
+  display: inline-block;
+  background-color: var(--caribbean-green);
+  color: var(--black);
+  padding: .625rem 3.25rem;
 }
 
 /* .header {

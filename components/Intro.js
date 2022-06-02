@@ -18,11 +18,11 @@ export default function Intro() {
         />
       </div>
       <div className="introCopy">
-        <h1>
-          Hi, I am <br />
+        <h1 className="introCopyHeader">
+          Hi, I'm <br />
           Adam
         </h1>
-        <h2>Frontend Dev</h2>
+        <p>Frontend Developer</p>
       </div>
     </section>
   )
