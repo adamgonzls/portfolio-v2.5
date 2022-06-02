@@ -1,9 +1,10 @@
 import layout from './layout.module.css'
+import styles from './Work.module.css'
 
 export default function Work() {
   return (
-    <section>
-      <h2>My Work</h2>
+    <section className="work">
+      <h2 className={styles.workHeader}>My Work</h2>
       <div className={layout.sectionDetailRow}>
         <div className={layout.sectionDetailBlock}>
           <h3 className={layout.sectionDetailHeader}>Quizzical</h3>
@@ -19,22 +20,16 @@ export default function Work() {
           <h3 className={layout.sectionDetailHeader}>Some Other Thing</h3>
         </div>
       </div>
-      <div>
-        <h3>Quizzical</h3>
-        <a href="https://quizzical-alpha.vercel.app/">View Site</a>
-      </div>
-      <div>
-        <h3>Color Scheme Picker</h3>
-        <a href="https://color-scheme-picker.netlify.app/" target="_blank">
-          View site
+      <div className={layout.sectionButtonContainer}>
+        <a className={layout.baseButton} href="/work">
+          View my Work
         </a>
-      </div>
-      <div>
-        <h3>Some Other Thing</h3>
-      </div>
-      <div>
-        <a href="/work">View my Work</a>
-        <a href="https://github.com/adamgonzls" target="_blank">
+        <br />
+        <a
+          className={layout.baseButton}
+          href="https://github.com/adamgonzls"
+          target="_blank"
+        >
           Visit my GitHub Profile
         </a>
       </div>

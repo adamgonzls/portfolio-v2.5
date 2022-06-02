@@ -28,11 +28,16 @@
   font-size: 1.125rem;
 }
 
+.sectionButtonContainer {
+  text-align: center;
+}
+
 .baseButton {
   display: inline-block;
   background-color: var(--caribbean-green);
   color: var(--black);
   padding: .625rem 3.25rem;
+  font-weight: 900;
 }
 
 /* .header {

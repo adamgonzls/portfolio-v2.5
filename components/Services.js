@@ -33,7 +33,7 @@ export default function Services() {
           </p>
         </div>
       </div>
-      <div className={styles.servicesButtonContainer}>
+      <div className={layout.sectionButtonContainer}>
         <a className={layout.baseButton} href="/work">
           See my Work
         </a>

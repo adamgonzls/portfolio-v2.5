@@ -1,6 +1,7 @@
 :root {
   --white: #fff;
   --black: #333333;
+  --mineshaft: #303030;
   --bg-color: var(--white);
   --caribbean-green: #14cfae;
 }
@@ -26,17 +27,16 @@ p {
   margin: 0;
 }
 
-h2 {
-  color: red;
-  font-size: 3.125rem;
-  text-align: center;
+h2,
+h3 {
+  color: var(--mineshaft);
   font-family: Source Sans Pro;
   font-weight: 900;
 }
 
-h3 {
-  font-family: Source Sans Pro;
-  font-weight: 900;
+h2 {
+  font-size: 3.125rem;
+  text-align: center;
 }
 
 p {

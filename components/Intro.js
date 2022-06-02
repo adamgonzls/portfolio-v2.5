@@ -7,13 +7,15 @@ export default function Intro() {
 
   return (
     <section className={styles.introContainer}>
-      <div>
+      <div className={styles.introImageContainer}>
         <Image
           priority
           src="/images/2022-04-adam-bike-glasses-400x534.jpeg"
           // className={utilStyles.borderCircle}
-          height={144}
-          width={144}
+          // height={144}
+          // width={144}
+          layout="fill"
+          objectFit="contain"
           alt={name}
         />
       </div>

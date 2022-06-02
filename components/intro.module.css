@@ -4,3 +4,9 @@
   align-items: center;
   gap: 40px;
 }
+
+.introImageContainer {
+  width: 144px;
+  height: 200px;
+  position: relative;
+}
