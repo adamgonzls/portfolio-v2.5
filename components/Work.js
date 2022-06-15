@@ -1,7 +1,14 @@
+import { useEffect } from 'react'
 import layout from './layout.module.css'
 import styles from './Work.module.css'
 
 export default function Work() {
+  useEffect(() => {
+    fetch(`https://api.github.com/users/adamgonzls/repos?topic=featured-repo`)
+      .then((res) => res.json())
+      .then((data) => console.log(data))
+  }, [])
+
   return (
     <section className="work">
       <h2 className={styles.workHeader}>My Work</h2>
@@ -11,7 +18,7 @@ export default function Work() {
           <a href="https://quizzical-alpha.vercel.app/">View Site</a>
         </div>
         <div className={layout.sectionDetailBlock}>
-          <h3 className={layout.sectionDetailHeader}>CSS</h3>
+          <h3 className={layout.sectionDetailHeader}>Color Picker</h3>
           <a href="https://color-scheme-picker.netlify.app/" target="_blank">
             View site
           </a>

@@ -1,6 +1,6 @@
 import Head from 'next/head'
+import Image from 'next/image'
 import Navbar from './Navbar'
-
 import styles from './layout.module.css'
 import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
@@ -50,6 +50,50 @@ export default function Layout({ children, home }) {
           </Link>
         </div>
       )}
+      <footer className={styles.footer}>
+        <a
+          className={styles.footerLink}
+          href="mailto:adam@adamgonzalesworks.com"
+        >
+          Contact me
+        </a>
+        <ul className={styles.socialList}>
+          <li className={styles.socialItem}>
+            <a href="https://github.com/adamgonzls">
+              <img src="/images/icon-github.svg" alt="" />
+              {/* <Image
+                priority
+                src="/images/icon-github.svg"
+                height={24}
+                width={24}
+                alt="github"
+              /> */}
+            </a>
+          </li>
+          <li className={styles.socialItem}>
+            <a href="https://www.linkedin.com/in/adamgonzales1/">
+              <Image
+                priority
+                src="/images/icon-linkedin.svg"
+                height={24}
+                width={24}
+                alt="LinkedIn"
+              />
+            </a>
+          </li>
+          <li className={styles.socialItem}>
+            <a href="https://twitter.com/adamgonzls">
+              <Image
+                priority
+                src="/images/icon-twitter.svg"
+                height={24}
+                width={24}
+                alt="Twitter"
+              />
+            </a>
+          </li>
+        </ul>
+      </footer>
     </div>
   )
 }

@@ -1,11 +1,13 @@
 import Image from 'next/image'
+import layout from './layout.module.css'
+import styles from './About.module.css'
 
 export default function About() {
   return (
     <section className="about">
       <h2>Who I am</h2>
       <p>Frontend developer in the Southwest</p>
-      <div>
+      <div className={styles.aboutContent}>
         <p>Hi I'm Adam...</p>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
@@ -13,16 +15,23 @@ export default function About() {
           saepe illo expedita corrupti fuga laboriosam, at, accusantium qui
           quaerat tempora! Magni.
         </p>
+        {/* <img src="/images/2022-04-adam-bike-glasses-400x534.jpeg" alt="" /> */}
+        <Image
+          priority
+          src="/images/2022-04-adam-bike-glasses-400x534.jpeg"
+          // className={utilStyles.borderCircle}
+          width={400}
+          height={534}
+          // layout="responsive"
+          alt="Adam"
+        />
       </div>
-      <a href="/about">Get to know me better</a>
-      <Image
-        priority
-        src="/images/2022-04-adam-bike-glasses-400x534.jpeg"
-        // className={utilStyles.borderCircle}
-        height={144}
-        width={144}
-        alt="Adam"
-      />
+      <div className={layout.sectionButtonContainer}>
+        <a className={layout.baseButton} href="/about" target="_blank">
+          Get to know me better
+        </a>
+      </div>
+      <br />
     </section>
   )
 }
