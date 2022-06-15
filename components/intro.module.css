@@ -5,8 +5,19 @@
   gap: 40px;
 }
 
+
 .introImageContainer {
   width: 144px;
   height: 200px;
   position: relative;
+}
+
+.introCopyHeader {
+  margin-bottom: .25em;
+  font-weight: var(--fw-reg);
+}
+
+.introCopySubtitle {
+  font-size: var(--fs-h3);
+  background: var(--accent-color);
 }

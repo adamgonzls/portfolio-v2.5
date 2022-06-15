@@ -6,9 +6,10 @@ export default function About() {
   return (
     <section className="about">
       <h2>Who I am</h2>
-      <p>Frontend developer in the Southwest</p>
+      <p className={styles.aboutSubtitle}>
+        Frontend developer in the Southwest
+      </p>
       <div className={styles.aboutContent}>
-        <p>Hi I'm Adam...</p>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
           quas optio blanditiis esse molestiae voluptatum quasi minima adipisci
