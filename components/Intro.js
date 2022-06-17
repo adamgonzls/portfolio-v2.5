@@ -7,7 +7,17 @@ export default function Intro() {
 
   return (
     <section className={styles.introContainer}>
-      <div className={styles.introImageContainer}>
+      <h1 className={styles.introCopyHeader}>
+        Hi, I'm <br />
+        <strong>Adam</strong>
+      </h1>
+      <p className={styles.introCopySubtitle}>Frontend Developer</p>
+      <img
+        className={styles.introImage}
+        src="/images/2022-04-adam-bike-glasses-1000.jpeg"
+        alt=""
+      />
+      {/* <div className={styles.introImageContainer}>
         <Image
           priority
           src="/images/2022-04-adam-bike-glasses-400x534.jpeg"
@@ -18,14 +28,7 @@ export default function Intro() {
           objectFit="contain"
           alt={name}
         />
-      </div>
-      <div className="introCopy">
-        <h1 className={styles.introCopyHeader}>
-          Hi, I'm <br />
-          <strong>Adam</strong>
-        </h1>
-        <p className={styles.introCopySubtitle}>Frontend Developer</p>
-      </div>
+      </div> */}
     </section>
   )
 }

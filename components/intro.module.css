@@ -1,23 +1,63 @@
 .introContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 40px;
+  
 }
-
 
 .introImageContainer {
   width: 144px;
   height: 200px;
+  /* max-width: 100%; */
   position: relative;
 }
 
+.introCopyHeader,
+.introCopySubtitle {
+  margin-bottom: .75em;
+}
+
 .introCopyHeader {
-  margin-bottom: .25em;
   font-weight: var(--fw-reg);
 }
 
 .introCopySubtitle {
   font-size: var(--fs-h3);
+  font-family: var(--ff-secondary);
   background: var(--accent-color);
+}
+
+@media screen and (min-width: 31em) {
+  .introContainer {
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px; */
+    margin-right: auto;
+    margin-left: auto;
+    display: grid;
+    width: min-content;
+    grid-template-areas:
+      "img title"
+      "img subtitle";
+    grid-template-columns: min-content max-content;
+    gap: 1em;
+  }
+
+  .introImage {
+    grid-area: img;
+    min-width: 290px;
+  }
+
+  .introCopyHeader {
+    align-self: center;
+    margin-bottom: 0;
+  }
+
+  .introCopySubtitle {
+    align-self: end;
+    grid-column: -1/1;
+    grid-row: 2;
+    text-align: right;
+    position: relative;
+    left: -1.5em;
+    width: calc(100% + 1.5em);
+  }
 }

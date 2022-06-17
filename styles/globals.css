@@ -81,6 +81,10 @@ h3 {
   font-size: var(--fs-h3);
 }
 
+section {
+  padding: 5em 2em;
+}
+
 p {
   margin: 0;
   font-family: var(--ff-primary);
